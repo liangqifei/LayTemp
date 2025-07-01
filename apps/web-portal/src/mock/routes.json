@@ -1,0 +1,37 @@
+[
+    {
+      "path": "/dashboard",
+      "name": "Dashboard",
+      "component": "Dashboard",
+      "meta": {
+        "title": "仪表盘",
+        "icon": "dashboard",
+        "roles": ["admin", "user"],
+        "hideInMenu": false,
+        "layout": "main"
+      },
+      "children": [
+        {
+          "path": "analysis",
+          "name": "Analysis",
+          "component": "DashboardAnalysis",
+          "meta": {
+            "title": "分析页",
+            "roles": ["admin"],
+            "hideInMenu": false,
+            "layout": "main"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/login",
+      "name": "Login",
+      "component": "Login",
+      "meta": {
+        "title": "登录",
+        "hideInMenu": true,
+        "layout": "blank"
+      }
+    }
+  ]
